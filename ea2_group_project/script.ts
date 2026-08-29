@@ -39,6 +39,23 @@ const memberOne: CulinaryStaff = {
 
 // 3. Member 2 to 5 Object Instances (Add via Pull Request)
 // const memberTwo: CulinaryStaff = { ... };
+const memberTwo: CulinaryStaff={
+  staffId: 202331054,
+  chefName: "Lenard Ramos",
+  station: KitchenStation.SAUCIER,
+  isServiceReady: true,
+  assignedSection: "Main Kitchen",
+  print(){
+    console.log("=== Restaurant Staff Profile ===");
+    console.log(`Staff ID: ${this.staffId}`);
+    console.log(`Chef Name: ${this.chefName}`);
+    console.log(`Station: ${this.station}`);
+    console.log(
+      `Service Status: ${this.isServiceReady ? "Service Ready" : "Prep Shift"}`
+    );
+    console.log(`Section: ${this.assignedSection ?? "General Line"}`);
+  }
+}
 // const memberThree: CulinaryStaff = { ... };
 // const memberFour: CulinaryStaff = { ... };
 // const memberFive: CulinaryStaff = { ... };
@@ -46,6 +63,7 @@ const memberOne: CulinaryStaff = {
 // 4. Execute print methods
 memberOne.print();
 // memberTwo.print();
+memberTwo.print();
 // memberThree.print();
 // memberFour.print();
 // memberFive.print();
