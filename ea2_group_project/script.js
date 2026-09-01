@@ -43,13 +43,28 @@ const memberTwo = {
     }
 };
 // const memberThree: CulinaryStaff = { ... };
+const memberThree = {
+    staffId: 202331126,
+    chefName: "Tobi Padolina",
+    station: KitchenStation.SOMMELIER,
+    isServiceReady: false,
+    assignedSection: "Wine Cellar",
+    print() {
+        console.log("=== Restaurant Staff Profile ===");
+        console.log(`Staff ID: ${this.staffId}`);
+        console.log(`Chef Name: ${this.chefName}`);
+        console.log(`Station: ${this.station}`);
+        console.log(`Service Status: ${this.isServiceReady ? "Service Ready" : "Prep Shift"}`);
+        console.log(`Section: ${this.assignedSection ?? "General Line"}`);
+    }
+};
 // const memberFour: CulinaryStaff = { ... };
 // const memberFive: CulinaryStaff = { ... };
 // 4. Execute print methods
 memberOne.print();
 // memberTwo.print();
 memberTwo.print();
-// memberThree.print();
+memberThree.print();
 // memberFour.print();
 // memberFive.print();
 // Transpiling Instructions:
