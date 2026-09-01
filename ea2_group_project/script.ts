@@ -57,8 +57,11 @@ const memberTwo: CulinaryStaff={
   }
 }
 // const memberThree: CulinaryStaff = { ... };
-const memberThree: CulinaryStaff = {
-  staffId: 202330737,
+
+// const memberFour: CulinaryStaff = { ... };
+
+const memberFour: CulinaryStaff = {
+   staffId: 202330737,
   chefName: "Ally Martin",
   station: KitchenStation.CHEF_DE_PARTIE,
   isServiceReady: true,
@@ -75,7 +78,6 @@ const memberThree: CulinaryStaff = {
   }, 
 };
 
-// const memberFour: CulinaryStaff = { ... };
 // const memberFive: CulinaryStaff = { ... };
 
 // 4. Execute print methods
@@ -83,8 +85,8 @@ memberOne.print();
 // memberTwo.print();
 memberTwo.print();
 // memberThree.print();
-memberThree.print();
 // memberFour.print();
+memberFour.print();
 // memberFive.print();
 
 // Transpiling Instructions:

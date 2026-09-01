@@ -43,7 +43,8 @@ const memberTwo = {
     }
 };
 // const memberThree: CulinaryStaff = { ... };
-const memberThree = {
+// const memberFour: CulinaryStaff = { ... };
+const memberFour = {
     staffId: 202330737,
     chefName: "Ally Martin",
     station: KitchenStation.CHEF_DE_PARTIE,
@@ -58,15 +59,14 @@ const memberThree = {
         console.log(`Section: ${this.assignedSection ?? "General Line"}`);
     },
 };
-// const memberFour: CulinaryStaff = { ... };
 // const memberFive: CulinaryStaff = { ... };
 // 4. Execute print methods
 memberOne.print();
 // memberTwo.print();
 memberTwo.print();
 // memberThree.print();
-memberThree.print();
 // memberFour.print();
+memberFour.print();
 // memberFive.print();
 // Transpiling Instructions:
 // Build once: npm run build (or: npx tsc)
