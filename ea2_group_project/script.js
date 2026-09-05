@@ -75,13 +75,30 @@ const memberFour = {
     },
 };
 // const memberFive: CulinaryStaff = { ... };
+const memberFive = {
+    staffId: 202331055,
+    chefName: "Charlz Layug",
+    station: KitchenStation.SOUS_CHEF,
+    isServiceReady: true,
+    assignedSection: "Main Kitchen",
+    print() {
+        console.log("=== Restaurant Staff Profile ===");
+        console.log(`Staff ID: ${this.staffId}`);
+        console.log(`Chef Name: ${this.chefName}`);
+        console.log(`Station: ${this.station}`);
+        console.log(`Service Status: ${this.isServiceReady ? "Service Ready" : "Prep Shift"}`);
+        console.log(`Section: ${this.assignedSection ?? "General Line"}`);
+    },
+};
 // 4. Execute print methods
 memberOne.print();
 // memberTwo.print();
 memberTwo.print();
+// memberThree.print();
 memberThree.print();
 // memberFour.print();
 memberFour.print();
 // memberFive.print();
+memberFive.print();
 // Transpiling Instructions:
 // Build once: npm run build (or: npx tsc)
